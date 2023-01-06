@@ -10,6 +10,9 @@ app.listen(port, () => console.log("Port 3000 running"))
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, ".", "views", "index.html"))
 });
-app.get('/header', (req, res) => {
-    res.sendFile(path.resolve(__dirname, ".", "views", "header.html"))
+app.get('/home', (req, res) => {
+    res.sendFile(path.resolve(__dirname, ".", "views", "home.html"))
+});
+app.get('/login', (req, res) => {
+    res.sendFile(path.resolve(__dirname, ".", "views", "login.html"))
 });
