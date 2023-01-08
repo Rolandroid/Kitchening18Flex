@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Stylesheet/styles.css">
     <script src="https://kit.fontawesome.com/3fab2a7658.js" crossorigin="anonymous"></script>
-    <title>Mercado Liebre</title>
+    <title>Mercado Liebre Registro</title>
 
 </head>
 
@@ -31,7 +31,8 @@
 
             </ul>
             <ul>
-                <li> <a href="/views/header.html">ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                <li> <a href="/home">regresar<i class="fa-solid fa-house"></i></a></li>
+                <li> <a href="/login">ingresar<i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
             </ul>
         </nav>
 
@@ -41,12 +42,18 @@
         <img class=__Index__Body__Main__Section__img--Banner src="/images/img-home-banner.jpg">
         <h1>Registro de cuenta</h1>
         <form>
+            <h3>Informacion personal</h3>
             <input type="text" placeholder="Nombre y apellido">
             <input type="text" placeholder="Nombre de usuario">
             <input type="email" placeholder="E-mail">
-            <h3>Fecha de nadimiento</h3>
+            <h3>Fecha de nacimiento</h3>
             <input type="date">
             <input type="text" placeholder="Domicilio">
+            <h3>Foto de usuario</h3>
+            <input type="file"  placeholder="">
+            <h3>Seguridad</h3>
+            <input type= "password" placeholder="Contraseña">
+            <input type= "password" placeholder="Confirme Contraseña">
             <h3>Perfil de usuario</h3>
             <ul>
                 
@@ -62,6 +69,17 @@
                 <li>Jugueteria<input type="checkbox"></li>
                 <li>Vida sana<input type="checkbox"></li>
             </ul>
+            
+            <div>
+            <button type="reset">
+                borrar
+            </button>
+            <button type="submit">
+                enviar
+            </button>
+            </div>
+            
+
 
         </form>
     </main>

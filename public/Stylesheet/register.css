@@ -23,3 +23,12 @@ main form h3{
     font-size: 120%;
     padding: 1% 0;
 }
+
+main form div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+main form div button{
+    padding: 1%;
