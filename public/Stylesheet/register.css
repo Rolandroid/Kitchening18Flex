@@ -31,4 +31,10 @@ main form div {
 
 }
 main form div button{
+    border: none;
+    border-radius: 5%;
+    color:white ;
+    background-color: #2968c8;
     padding: 1%;
+    
+}
