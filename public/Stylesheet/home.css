@@ -1,6 +1,6 @@
 @import "./variables.css";
 
-* {
+* { padding: 1%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -170,6 +170,66 @@ main section article div h2 {
     font-size: 90%;
     width: 100%;
 }
+
+
+/* 
+<footer>
+
+        <article>
+            <h3>Pagá con tarjeta o en efectivo</h3>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!</p>
+        </article>
+        <article>
+            <h3>Envío gratis desde $ 2.500</h3>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+        </article>
+        <article>
+            <h3>Seguridad, de principio a fin</h3>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </article>
+        <article>
+            <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+        </article>
+
+    </footer>  */
+    footer{
+        background-color: var(--colorAmarillo);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding:10% 0;
+    }
+    footer article{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    footer article i {
+    }
+    footer article h3{
+    }
+    footer article p{
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
