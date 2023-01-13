@@ -128,7 +128,7 @@ main section article {
     flex-direction: column;
     background-color: white;
     margin: 1% auto;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
 }
 
 main section article img {
@@ -138,6 +138,7 @@ main section article img {
 }
 
 main section article div {
+    width: 12cm;
     padding: 3%;
     align-content: flex-end;
     display: flex;
@@ -146,10 +147,15 @@ main section article div {
 
 }
 
-main section article div i {
+main section article div div i.fa-solid.fa-truck::before {
+    width: 20px;
     color: var(--colorVerde);
     width: 100%;
     padding: 1%;
+    transition: 0.5seg;
+}
+main section article div div i.fa-solid.fa-truck::before:hover {
+    transform:-45deg;
 }
 
 main section article div h3 {
@@ -159,19 +165,27 @@ main section article div h3 {
 
 main section article div h4 {
     color: var(--colorVerde);
-
-
+    display:;
     font-size: 90%;
     width: 40%;
 }
 
 main section article div h2 {
+
     padding: 3% 0;
     font-size: 90%;
     width: 100%;
+    display: none;
+
+
+}
+main section article:hover div h2 {
+    display: block;
 }
 
-
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 /* 
 <footer>
 
