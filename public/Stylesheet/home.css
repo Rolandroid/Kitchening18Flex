@@ -1,14 +1,13 @@
-@import "./variables.css";
+@import "styles.css";
 
-* { padding: 1%;
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
-    box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
     font-family: var(--tipografiaGeneral);
-    font-size: 0.9rem;
+    font-size: 12px;
 }
+<<<<<<< HEAD
 
 body {
     width:fit-content;
@@ -21,64 +20,81 @@ header {
 }
 
 header div {
+=======
+.esteBody{
+>>>>>>> Version3
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--colorGrisClaro);
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    padding: 1%;
 }
 
-header img {
+.esteHeader{
     display: flex;
+    flex-wrap: wrap;
+    background-color: var(--colorAmarillo);
     justify-content: center;
-    width: 35%;
-    padding: 1%;
-}
+    align-items: center;
 
-header form {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    padding: 1%;
 }
-
-header form input {
-    width: 60%;
-    padding: 1%;
+.esteHeader img{
+   width: 50vw;
 }
-
-header span {
-    display: flex;
-    justify-content: center;
+.esteHeader form{
+   width: 50vw;
+   text-align: center;
+}
+.esteHeader form span{
+    padding: 2px;
+    background-color: white; 
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.esteHeader form span input{
+    width: 20vw;
+    border:none;
+    background-color:transparent;
+}
+.esteHeader form span button{
+    width: 19px;
+    border:none;    
+    background-color:transparent;
+}
+.esteHeader span{
+    margin: 5px 0;
     width: 100%;
-    padding: 1%;
+    text-align: center;
 }
-
-header nav {
-    display: flex;
+.esteHeader nav{
+    width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1%;
+    display: flex;
 }
-
-header nav button {
-    display: block;
-    margin: 0 auto;
-    width: 6%;
-    height: 6%;
-    color: var(--colorGrisClaro);
-    padding: 3.5px;
-    border: none;
-    border-radius: 15%;
+.esteHeader nav button{
     background-color: var(--colorAzul);
-    padding: 1%;
+    width: 19px;
+    margin: 5px auto;    
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
-
-header nav ul {
-    width: 41%;
+.esteHeader nav button i{
+    color: white;
+}
+.esteHeader nav ul{
+    justify-content: space-between;
     display: none;
+    gap:20px;
+}
+.esteHeader nav ul a{
+}
+.esteHeader nav ul a li{
+    text-align: center;
 }
 
+<<<<<<< HEAD
 header nav ul li {
     display: flex;
     justify-content: center;
@@ -104,49 +120,111 @@ main {
 }
 
 main img {
+=======
+.esteBody h1{
+>>>>>>> Version3
     width: 100%;
-}
-
-
-main h1 {
+    font-size: 24px;
+    font-weight: bolder;
     color: var(--colorGrisOscuro);
-    width: 100%;
-    font-size: 150%;
-    font-weight: 150%;
-    padding: 2%;
-    margin: 0 auto 0 0;
+    align-self: flex-start;
+    margin: 5vw 0 0 5vw;
 }
-
-main section {
-    align-content: stretch;
+.esteMain{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-
-main section article {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+.esteArticle {
+    margin-top: 5vw;
+    height: fit-content;
+    width: 90vw;
+    display: flex;    
+    flex-wrap: wrap;
     background-color: white;
+<<<<<<< HEAD
     margin: 1% auto;
     
 }
 
 main section article img {
     border-bottom: solid 2px var(--colorGrisClaro);
-    ;
+=======
+}
+.esteArticle img{
     width: 100%;
 }
+.esteArticle span{
+    text-align: right;
+    height: 10px;
+    border-top: solid 1px var(--colorGrisClaro);
+    width: 100%;
+}
+.esteArticle span i{
+    background-color: white;
+    position: relative;
+    bottom:100%;
+    right :5%;
+    color: var(--colorVerde);
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+    padding: 5px;
+}
+.esteArticle span i{
+    position: relative;
+    background-color: white;
+    position: relative;
+    bottom:100%;
+    right :5%;
+    color: var(--colorVerde);
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+    padding: 5px;
+    transition: 1s all;
+}
+.esteArticle span i:hover{
+    transform: rotate(-45deg);
+}
+
+.esteArticle h2{
+    font-size: 18px;
+    margin: 12px 0 12px 12px
+>>>>>>> Version3
+    ;
+}
+<<<<<<< HEAD
 
 main section article div {
     width: 12cm;
     padding: 3%;
     align-content: flex-end;
     display: flex;
-    flex-wrap: wrap;
-
-
+=======
+.esteArticle h3{
+    width: 35%;    
+    font-size: 16px;
+    color: var(--colorVerde);
+    margin: 12px 0 12px 12px;
 }
+.esteArticle h1{    
+    color: var(--colorGrisOscuro);
+    font-size: 16px;
+    width: 90vw;
+    margin: 0 0 0 12px;
+    display: none
+}
+
+.esteFooter{   
+     width: 100%;
+    background-color: var(--colorAmarillo);
+    margin-top: 5vw;
+    display: flex;    
+>>>>>>> Version3
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+<<<<<<< HEAD
 
 main section article div div i.fa-solid.fa-truck::before {
     width: 20px;
@@ -157,12 +235,16 @@ main section article div div i.fa-solid.fa-truck::before {
 }
 main section article div div i.fa-solid.fa-truck::before:hover {
     transform:-45deg;
+=======
+.esteFooter div{
+    text-align: center;
+    margin-top: 10px;
+>>>>>>> Version3
 }
-
-main section article div h3 {
-    width: 40%;
-    font-size: 120%;
+.esteFooter div h6{
+    font-weight:900;
 }
+<<<<<<< HEAD
 
 main section article div h4 {
     color: var(--colorVerde);
@@ -179,11 +261,21 @@ main section article div h2 {
     display: none;
 
 
+=======
+.esteFooter div i{
 }
-main section article:hover div h2 {
-    display: block;
+.esteFooter div i:hover{
+    color: var(--colorAzul);
+}
+.esteFooter footer{    
+    margin-top: 20px;
+>>>>>>> Version3
+}
+.esteFooter footer h3{
+    font-weight:bolder;
 }
 
+<<<<<<< HEAD
 main section article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 } */
@@ -221,19 +313,35 @@ main section article:hover{
     }
     footer article{
         width: 70%;
+=======
+
+
+@media (min-width: 361px){
+    .esteHeader img{
+        width: 33vw;
+     }
+     .esteHeader form{
+        width: 33vw;
+     }
+     .esteHeader span{
+        margin: 5px 0;
+        width: 33vw;
+        text-align: center;
+     }
+    .esteArticle{
+        width: 45vw;
+        transition: 0.5s all;
+
+    }
+    .esteArticle:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .esteHeader nav button{
+        display: none
+    }
+    .esteHeader nav ul{    
+>>>>>>> Version3
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-
-
-    }
-    footer article i {
-    }
-    footer article h3{
-    }
-    footer article p{
     }
     body {
         width:fit-content;
@@ -261,44 +369,22 @@ Descripciones: 16px
  */
 
 
-
-
-
-@media (min-width: 361px) {
-
-    header nav ul {
-        display: flex;
-
+    .esteArticle h1{    
+        display: block;
+        transition: 1s all;
+        overflow:hidden;
+        height: 0px;
+        opacity: 0;
     }
-
-    header nav button {
-        display: none;
-    }
-
-    main section article {
-        width: 46%;
-
-    }
-
-    header img {
-        width: 30%;
-    }
-
-    header form {
-        width: 30%;
-    }
-
-    header span {
-        width: 30%;
-    }
-
-    header form input {
-        width: 80%;
+    .esteArticle:hover h1{
+        height: 30px;
+        opacity: 1;
     }
     body {
         width:fit-content;
     }
 }
+<<<<<<< HEAD
 
 @media (min-width: 769px) {
 
@@ -309,3 +395,22 @@ Descripciones: 16px
         width:fit-content;
     }
 }
+=======
+@media (min-width: 769px){
+    .esteArticle{
+        width: 30vw;
+    }
+    .esteFooter{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .esteFooter div{
+        width: 30%;
+    }
+    .esteFooter footer{ 
+        text-align: center;
+        width: 100vw;
+    }
+}
+>>>>>>> Version3
