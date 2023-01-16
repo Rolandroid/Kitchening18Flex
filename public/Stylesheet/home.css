@@ -37,7 +37,7 @@
     border-radius: 4px;
 }
 .esteHeader form span input{
-    width: 30vw;
+    width: 20vw;
     border:none;
     background-color:transparent;
 }
@@ -48,10 +48,11 @@
 }
 .esteHeader span{
     margin: 5px 0;
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 .esteHeader nav{
+    width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
@@ -59,7 +60,7 @@
 .esteHeader nav button{
     background-color: var(--colorAzul);
     width: 19px;
-    margin: 5px 0;    
+    margin: 5px auto;    
     border: 1px solid transparent;
     border-radius: 4px;
 }
@@ -67,19 +68,29 @@
     color: white;
 }
 .esteHeader nav ul{
+    justify-content: space-between;
     display: none;
 }
-.esteHeader nav ul li{}
-.esteHeader nav ul li a{}
+.esteHeader nav ul a{
+}
+.esteHeader nav ul a li{
+    text-align: center;
+    width: 75px;    
+}
 
 .esteBody h1{
+    width: 100%;
     font-size: 24px;
     font-weight: bolder;
     color: var(--colorGrisOscuro);
     align-self: flex-start;
     margin: 5vw 0 0 5vw;
 }
-
+.esteMain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .esteArticle {
     margin-top: 5vw;
     width: 90vw;
@@ -88,13 +99,13 @@
     background-color: white;
 }
 .esteArticle img{
-    width: 90vw;
+    width: 100%;
 }
 .esteArticle span{
     text-align: right;
     height: 10px;
     border-top: solid 1px var(--colorGrisClaro);
-    width: 90vw;
+    width: 100%;
 }
 .esteArticle span i{
     background-color: white;
@@ -106,19 +117,39 @@
     border-radius: 50%;
     padding: 5px;
 }
+.esteArticle span i{
+    position: relative;
+    background-color: white;
+    position: relative;
+    bottom:100%;
+    right :5%;
+    color: var(--colorVerde);
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+    padding: 5px;
+    transition: 1s all;
+}
+.esteArticle span i:hover{
+    transform: rotate(-45deg);
+}
+
 .esteArticle h2{
-    width: 30%;
     font-size: 18px;
+    margin: 12px 0 12px 12px
+    ;
 }
 .esteArticle h3{
-    width: 70%;    
+    width: 35%;    
     font-size: 16px;
-    color: var(--colorVerde)
+    color: var(--colorVerde);
+    margin: 12px 0 12px 12px;
 }
 .esteArticle h1{    
     color: var(--colorGrisOscuro);
     font-size: 16px;
     width: 90vw;
+    margin: 0 0 0 12px;
+    display: none
 }
 
 .esteFooter{    
@@ -143,4 +174,44 @@
 }
 .esteFooter footer h3{
     font-weight:bolder;
+}
+
+
+
+@media (min-width: 361px){
+    .esteHeader img{
+        width: 33vw;
+     }
+     .esteHeader form{
+        width: 33vw;
+     }
+     .esteHeader span{
+         margin: 5px 0;
+         width: 33vw;
+         text-align: center;
+     }
+
+
+
+.esteArticle{
+    width: 45vw;
+}
+.esteHeader nav button{
+    display: none
+}
+.esteHeader nav ul{    
+    display: flex;
+}
+
+.esteArticle h1{    
+    display: block;
+    transition: 1s all;
+    overflow:hidden;
+    height: 0px;
+    opacity: 0;
+}
+.esteArticle:hover h1{
+    height: 30px;
+    opacity: 1;
+}
 }
