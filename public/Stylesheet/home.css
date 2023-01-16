@@ -32,8 +32,9 @@
    text-align: center;
 }
 .esteHeader form span{
+    padding: 2px;
     background-color: white; 
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-radius: 4px;
 }
 .esteHeader form span input{
@@ -70,12 +71,12 @@
 .esteHeader nav ul{
     justify-content: space-between;
     display: none;
+    gap:20px;
 }
 .esteHeader nav ul a{
 }
 .esteHeader nav ul a li{
     text-align: center;
-    width: 75px;    
 }
 
 .esteBody h1{
@@ -93,6 +94,7 @@
 }
 .esteArticle {
     margin-top: 5vw;
+    height: fit-content;
     width: 90vw;
     display: flex;    
     flex-wrap: wrap;
@@ -152,7 +154,8 @@
     display: none
 }
 
-.esteFooter{    
+.esteFooter{   
+     width: 100%;
     background-color: var(--colorAmarillo);
     margin-top: 5vw;
     display: flex;    
@@ -167,7 +170,10 @@
 .esteFooter div h6{
     font-weight:900;
 }
-.esteFooter div p{
+.esteFooter div i{
+}
+.esteFooter div i:hover{
+    color: var(--colorAzul);
 }
 .esteFooter footer{    
     margin-top: 20px;
@@ -186,32 +192,51 @@
         width: 33vw;
      }
      .esteHeader span{
-         margin: 5px 0;
-         width: 33vw;
-         text-align: center;
+        margin: 5px 0;
+        width: 33vw;
+        text-align: center;
      }
+    .esteArticle{
+        width: 45vw;
+        transition: 0.5s all;
 
+    }
+    .esteArticle:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .esteHeader nav button{
+        display: none
+    }
+    .esteHeader nav ul{    
+        display: flex;
+    }
 
-
-.esteArticle{
-    width: 45vw;
+    .esteArticle h1{    
+        display: block;
+        transition: 1s all;
+        overflow:hidden;
+        height: 0px;
+        opacity: 0;
+    }
+    .esteArticle:hover h1{
+        height: 30px;
+        opacity: 1;
+    }
 }
-.esteHeader nav button{
-    display: none
-}
-.esteHeader nav ul{    
-    display: flex;
-}
-
-.esteArticle h1{    
-    display: block;
-    transition: 1s all;
-    overflow:hidden;
-    height: 0px;
-    opacity: 0;
-}
-.esteArticle:hover h1{
-    height: 30px;
-    opacity: 1;
-}
+@media (min-width: 769px){
+    .esteArticle{
+        width: 30vw;
+    }
+    .esteFooter{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .esteFooter div{
+        width: 30%;
+    }
+    .esteFooter footer{ 
+        text-align: center;
+        width: 100vw;
+    }
 }
