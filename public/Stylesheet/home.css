@@ -239,4 +239,17 @@
         text-align: center;
         width: 100vw;
     }
+
+    .esteHeader img{
+        width: 30vw;
+     }
+     .esteHeader form{
+        width: 30vw;
+        text-align: center;
+     }
+     .esteHeader span{
+         margin: 5px 0;
+         width: 30vw;
+         text-align: center;
+     }
 }
