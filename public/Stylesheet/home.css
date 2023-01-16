@@ -1,299 +1,146 @@
-@import "./variables.css";
+@import "styles.css";
 
-* { padding: 1%;
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
-    box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
     font-family: var(--tipografiaGeneral);
-    font-size: 0.9rem;
+    font-size: 12px;
 }
-
-body {
-    background-color: var(--colorGrisClaro);
-}
-
-header {
-    background-color: var(--colorAmarillo);
-    padding: 1%;
-}
-
-header div {
+.esteBody{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--colorGrisClaro);
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    padding: 1%;
 }
 
-header img {
+.esteHeader{
     display: flex;
+    flex-wrap: wrap;
+    background-color: var(--colorAmarillo);
     justify-content: center;
-    width: 35%;
-    padding: 1%;
-}
+    align-items: center;
 
-header form {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    padding: 1%;
 }
-
-header form input {
-    width: 60%;
-    padding: 1%;
+.esteHeader img{
+   width: 50vw;
 }
-
-header span {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 1%;
+.esteHeader form{
+   width: 50vw;
+   text-align: center;
 }
-
-header nav {
-    display: flex;
+.esteHeader form span{
+    background-color: white; 
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.esteHeader form span input{
+    width: 30vw;
+    border:none;
+    background-color:transparent;
+}
+.esteHeader form span button{
+    width: 19px;
+    border:none;    
+    background-color:transparent;
+}
+.esteHeader span{
+    margin: 5px 0;
+    width: 100vw;
+    text-align: center;
+}
+.esteHeader nav{
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1%;
+    display: flex;
 }
-
-header nav button {
-    display: block;
-    margin: 0 auto;
-    width: 6%;
-    height: 6%;
-    color: var(--colorGrisClaro);
-    padding: 3.5px;
-    border: none;
-    border-radius: 15%;
+.esteHeader nav button{
     background-color: var(--colorAzul);
-    padding: 1%;
+    width: 19px;
+    margin: 5px 0;    
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
-
-header nav ul {
-    width: 41%;
+.esteHeader nav button i{
+    color: white;
+}
+.esteHeader nav ul{
     display: none;
 }
+.esteHeader nav ul li{}
+.esteHeader nav ul li a{}
 
-header nav ul li {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 1%;
-}
-
-
-
-main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-main img {
-    width: 100%;
-}
-
-
-main h1 {
+.esteBody h1{
+    font-size: 24px;
+    font-weight: bolder;
     color: var(--colorGrisOscuro);
-    width: 100%;
-    font-size: 150%;
-    font-weight: 150%;
-    padding: 2%;
-    margin: 0 auto 0 0;
+    align-self: flex-start;
+    margin: 5vw 0 0 5vw;
 }
 
-main section {
-    align-content: stretch;
-    display: flex;
+.esteArticle {
+    margin-top: 5vw;
+    width: 90vw;
+    display: flex;    
     flex-wrap: wrap;
-}
-
-main section article {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
     background-color: white;
-    margin: 1% auto;
-    transition: 0.5s all;
 }
-main section article:hover {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+.esteArticle img{
+    width: 90vw;
 }
-
-
-main section article img {
-    border-bottom: solid 2px var(--colorGrisClaro);
-    ;
-    width: 100%;
+.esteArticle span{
+    text-align: right;
+    height: 10px;
+    border-top: solid 1px var(--colorGrisClaro);
+    width: 90vw;
 }
-
-main section article i {
-    align-self: flex-end;
-    margin-right: 15px;
-}
-
-.fa-solid.fa-truck {
+.esteArticle span i{
+    background-color: white;
+    position: relative;
+    bottom:100%;
+    right :5%;
     color: var(--colorVerde);
-    width: 3%;
-    padding: 1%;
-    transition: all 0.3s;
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+    padding: 5px;
+}
+.esteArticle h2{
+    width: 30%;
+    font-size: 18px;
+}
+.esteArticle h3{
+    width: 70%;    
+    font-size: 16px;
+    color: var(--colorVerde)
+}
+.esteArticle h1{    
+    color: var(--colorGrisOscuro);
+    font-size: 16px;
+    width: 90vw;
 }
 
-.fa-solid.fa-truck:hover {
-    transform: rotate(-45deg);    
-}
-main section article div {
-    width: 12cm;
-    padding: 3%;
-    align-content: flex-end;
-    display: flex;
+.esteFooter{    
+    background-color: var(--colorAmarillo);
+    margin-top: 5vw;
+    display: flex;    
     flex-wrap: wrap;
-
-
+    flex-direction: column;
+    align-items: center;
 }
-
-main section article div i {
-    color: var(--colorVerde);
-    width: 100%;
-    padding: 1%;
+.esteFooter div{
+    text-align: center;
+    margin-top: 10px;
 }
-
-main section article div h3 {
-    width: 40%;
-    font-size: 120%;
+.esteFooter div h6{
+    font-weight:900;
 }
-
-main section article div h4 {
-    color: var(--colorVerde);
-    font-size: 90%;
-    width: 40%;
+.esteFooter div p{
 }
-
-main section article div h2 {
-    display: none;
-    padding: 3% 0;
-    font-size: 90%;
-    width: 100%;
-    transition: 0.5s all;
+.esteFooter footer{    
+    margin-top: 20px;
 }
-main section article:hover div h2 {
-    display: block;
-    padding: 3% 0;
-    font-size: 90%;
-    width: 100%;
-    display: none;
-
-
-}
-main section article:hover div h2 {
-    display: block;
-}
-
-
-/* 
-<footer>
-
-        <article>
-            <h3>Pagá con tarjeta o en efectivo</h3>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!</p>
-        </article>
-        <article>
-            <h3>Envío gratis desde $ 2.500</h3>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
-        </article>
-        <article>
-            <h3>Seguridad, de principio a fin</h3>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.</p>
-        </article>
-        <article>
-            <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
-        </article>
-
-    </footer>  */
-    footer{
-        background-color: var(--colorAmarillo);
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding:10% 0;
-        text-align: center;
-    }
-    footer article{
-        margin-bottom: 20px;
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-
-
-    }
-    footer article i {
-    }
-    footer article h3{
-    }
-    footer article p{
-    }
-
-
-
-
-@media (min-width: 361px) {
-
-    header nav ul {
-        display: flex;
-
-    }
-
-    header nav button {
-        display: none;
-    }
-
-    main section article {
-        width: 46%;
-
-    }
-
-    header img {
-        width: 30%;
-    }
-
-    header form {
-        width: 30%;
-    }
-
-    header span {
-        width: 30%;
-    }
-
-    header form input {
-        width: 80%;
-    }
-}
-
-@media (min-width: 769px) {
-
-    main section article {
-        width: 30%;
- 
-    }
-    footer{
-        flex-direction: row;
-        flex-wrap: wrap;
-        
-    }
-    footer article{
-        width: 30%;
-
+.esteFooter footer h3{
+    font-weight:bolder;
 }
