@@ -11,6 +11,7 @@
 }
 
 body {
+    width:fit-content;
     background-color: var(--colorGrisClaro);
 }
 
@@ -87,6 +88,15 @@ header nav ul li {
 
 
 
+
+
+
+
+
+
+
+/* 
+
 main {
     display: flex;
     flex-direction: column;
@@ -119,12 +129,8 @@ main section article {
     flex-direction: column;
     background-color: white;
     margin: 1% auto;
-    transition: 0.5s all;
+    
 }
-main section article:hover {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-
 
 main section article img {
     border-bottom: solid 2px var(--colorGrisClaro);
@@ -132,21 +138,6 @@ main section article img {
     width: 100%;
 }
 
-main section article i {
-    align-self: flex-end;
-    margin-right: 15px;
-}
-
-.fa-solid.fa-truck {
-    color: var(--colorVerde);
-    width: 3%;
-    padding: 1%;
-    transition: all 0.3s;
-}
-
-.fa-solid.fa-truck:hover {
-    transform: rotate(-45deg);    
-}
 main section article div {
     width: 12cm;
     padding: 3%;
@@ -157,10 +148,15 @@ main section article div {
 
 }
 
-main section article div i {
+main section article div div i.fa-solid.fa-truck::before {
+    width: 20px;
     color: var(--colorVerde);
     width: 100%;
     padding: 1%;
+    transition: 0.5seg;
+}
+main section article div div i.fa-solid.fa-truck::before:hover {
+    transform:-45deg;
 }
 
 main section article div h3 {
@@ -170,19 +166,13 @@ main section article div h3 {
 
 main section article div h4 {
     color: var(--colorVerde);
+    display:;
     font-size: 90%;
     width: 40%;
 }
 
 main section article div h2 {
-    display: none;
-    padding: 3% 0;
-    font-size: 90%;
-    width: 100%;
-    transition: 0.5s all;
-}
-main section article:hover div h2 {
-    display: block;
+
     padding: 3% 0;
     font-size: 90%;
     width: 100%;
@@ -194,7 +184,9 @@ main section article:hover div h2 {
     display: block;
 }
 
-
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+} */
 /* 
 <footer>
 
@@ -221,15 +213,13 @@ main section article:hover div h2 {
     footer{
         background-color: var(--colorAmarillo);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         padding:10% 0;
-        text-align: center;
     }
     footer article{
-        margin-bottom: 20px;
         width: 70%;
         display: flex;
         flex-direction: column;
@@ -245,6 +235,31 @@ main section article:hover div h2 {
     }
     footer article p{
     }
+    body {
+        width:fit-content;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+●Íconos
+
+ */
+
 
 
 
@@ -280,20 +295,17 @@ main section article:hover div h2 {
     header form input {
         width: 80%;
     }
+    body {
+        width:fit-content;
+    }
 }
 
 @media (min-width: 769px) {
 
     main section article {
         width: 30%;
- 
     }
-    footer{
-        flex-direction: row;
-        flex-wrap: wrap;
-        
+    body {
+        width:fit-content;
     }
-    footer article{
-        width: 30%;
-
 }
